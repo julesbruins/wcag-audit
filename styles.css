@@ -1,0 +1,10 @@
+/* CSS reset */
+body {
+    margin: 0;
+    padding: 0;
+}    
+
+/* h2 hidden maken (want niet overslaan) */
+h2 {
+    display: none;
+}
