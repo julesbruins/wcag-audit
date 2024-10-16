@@ -1,10 +1,119 @@
+@font-face {
+    font-family: "archivo";
+    src: url("assets/Archivo-VariableFont_wdth\,wght.ttf");
+  }
+  
+  @font-face {
+    font-family: "martianmono";
+    src: url("assets/MartianMono-VariableFont_wdth\,wght.ttf")
+  }
+
+:root {
+    --zwart: #222226;
+    --grijs: #666666;
+    --wit: #FFFFFF;
+    --blauw: rgb(54, 75, 247);
+
+    --border: 1px solid black;
+}
+
+
 /* CSS reset */
 body {
     margin: 0;
     padding: 0;
 }    
 
+p {
+    font-family: "archivo";
+    font-size: 1em;
+}
+
+a {
+    font-family: "martianmono";
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "archivo";
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
 /* h2 hidden maken (want niet overslaan) */
 h2 {
     display: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+header {
+
+}
+
+section.home {
+    a {
+        color: var(--zwart);
+        
+    }
+}
+
+section.trending {
+    img.sizing {
+        width: 100%;
+    }
+}
+
+
+
+/* HAMBURGER MENU */
+.off-screen-menu {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: yellow;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: var(--blauw);
+    border-raadius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
 }

@@ -8,6 +8,7 @@
     <!DOCTYPE html>
     <html lang="nl">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     </body>
 
     </html>
@@ -15,8 +16,32 @@
 
 <body>
     <header>
-        <nav>
-            <img src="../wcag-audit/assets/logo.svg" alt="Dutch Digital Agencies">
+        <img src="assets/logo.svg" alt="Dutch Digital Agencies">
+
+    
+    <div class="off-screen-menu">
+        <ul>
+            <li><a href="">over ons</a></li>
+            <li><a href="">events</a></li>
+            <li><a href="">publicaties</a></li>
+            <li><a href="">leden</a></li>
+            <li><a href="">vacatures</a></li>
+            <li><a href="">inloggen</a></li>
+            <li><a href="">word lid</a></li>
+        </ul>
+    </div>
+        
+    
+    <nav>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+        <!-- <nav>
             <ul>
                 <li><a href="">over ons</a></li>
                 <li><a href="">events</a></li>
@@ -26,14 +51,14 @@
                 <li><a href="">inloggen</a></li>
                 <li><a href="">word lid</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     <main>
         <!-- begin pagina tekst -->
         <section class="home">
             <h1>events</h1>
-            <a href=""><img src="../wcag-audit/assets/arrow-left.svg">home</a> <!-- order aanpassen in css -->
+            <a href=""><img src="assets/arrow-left.svg" alt="">terug naar home</a> <!-- order aanpassen in css -->
             <p>Spraakmakende sprekers. Inspirerende kennissessies. Events waar je écht bij wilt zijn. En waar
                 je al je vakgenoten weer spreekt. Versterk je bureau met kennis en inspiratie over bureaumanagement,
                 leiderschap
@@ -44,27 +69,27 @@
         <section class="trending">
             <h2 class="visually-hidden">trending events</h2>
             <article>
-                <img src="../wcag-audit/assets/dutch-digital-day.png" alt="dutch digital day">
+                <img class="sizing" src="assets/dutch-digital-day.png" alt="dutch digital day">
                 <p class="label"><abbr title="Dutch Digital Day">DDD</abbr></p>
                 <p class="data">wo 09 nov / Amsterdam</p>
                 <h3>Dutch Digital Day: The 10th edition</h3>
-                <a class="details" href="">details<img src="../wcag-audit/assets/arrow-right.svg"></a>
+                <a class="details" href="">details<img src="assets/arrow-right.svg" alt=""></a>
             </article>
 
             <article>
-                <img src="../wcag-audit/assets/leden-bijeenkomst.png" alt="ledenbijeenkomst">
+                <img class="sizing" src="assets/leden-bijeenkomst.png" alt="ledenbijeenkomst">
                 <p class="label"><abbr title="Dutch Digital Day">DDD</abbr></p>
                 <p class="data">do 10 nov / Utrecht</p>
                 <h3>Leden bijeenkomst</h3>
-                <a class="details" href="">details<img src="../wcag-audit/assets/arrow-right.svg"></a>
+                <a class="details" href="">details<img src="assets/arrow-right.svg" alt=""></a>
             </article>
 
             <article>
-                <img src="../wcag-audit/assets/creatieve-jam.png" alt="creatieve-jam">
+                <img class="sizing" src="assets/creatieve-jam.png" alt="creatieve-jam">
                 <p class="label">VERGADERING</p>
                 <p class="data">ma 31 dec / Amsterdam</p>
                 <h3>Creative Jam Dutch Design Week</h3>
-                <a class="details" href="">details<img src="../wcag-audit/assets/arrow-right.svg"></a>
+                <a class="details" href="">details<img src="assets/arrow-right.svg" alt=""></a>
             </article>
         </section>
 
@@ -82,70 +107,63 @@
 
         <!-- hele rij met events -->
         <section class="eventlist">
+            <h2 class="visually-hidden">eventlijst</h2>
             <ul>
                 <li>
                     <p class="label">UX</p>
                     <h4>Creative Jam Dutch Design Week</h4>
                     <p class="data">01 nov / Eindhoven</p>
-                    <a class="blauwe-link" href="">DETAILS<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">DETAILS<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
                 <li>
                     <p class="label">HR</p>
                     <h4>DDA Ledenbijeenkomst</h4>
                     <p class="data">09 nov / Amsterdam</p>
-                    <a class="blauwe-link" href="">DETAILS<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">DETAILS<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
                 <li>
                     <p class="label">UX</p>
                     <h4>Creative Jam Dutch Design Week</h4>
                     <p class="data">01 nov / Eindhoven</p>
-                    <a class="blauwe-link" href="">DETAILS<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">DETAILS<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
                 <li>
                     <p class="label">HR</p>
                     <h4>DDA Ledenbijeenkomst</h4>
                     <p class="data">09 NOV / AMSTERDAM</p>
-                    <a class="blauwe-link" href="">DETAILS<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">DETAILS<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
                 <li>
                     <p class="label">UX</p>
                     <h4>Creative Jam Dutch Design Week</h4>
                     <p class="data">01 nov / Eindhoven</p>
-                    <a class="blauwe-link" href="">DETAILS<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">DETAILS<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
                 <li>
                     <p class="label">HR</p>
                     <h4>DDA Ledenbijeenkomst</h4>
                     <p class="data">09 nov / Amsterdam</p>
-                    <a class="blauwe-link" href="">DETAILS<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">DETAILS<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
                 <li>
                     <p class="label">UX</p>
                     <h4>Creative Jam Dutch Design Week</h4>
                     <p class="data">01 nov / Eindhoven</p>
-                    <a class="blauwe-link" href="">DETAILS<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">DETAILS<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
                 <li>
                     <p class="label">HR</p>
                     <h4>DDA Ledenbijeenkomst</h4>
                     <p class="data">09 nov / Amsterdam</p>
-                    <a class="blauwe-link" href="">DETAILS<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">DETAILS<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
             </ul>
         </section>
 
         <!-- laden content -->
-        <section class="laden">
+        <div class="laden">
             <p>meer events aan het laden...</p>
-        </section>
+        </div>
 
         <!-- hele rij plaatsgevonden events -->
         <section class="verleden">
@@ -156,64 +174,61 @@
                     <h4>Creative Jam Dutch Design Week</h4>
                     <p class="data">01 nov / Eindhoven</p>
                     <p>heeft plaatsgevonden</p>
-                    <a class="blauwe-link" href="">BUTTON<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">BUTTON<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
                 <li>
                     <p class="label">HR</p>
                     <h4>DDA Ledenbijeenkomst</h4>
                     <p class="data">09 nov / Amsterdam</p>
                     <p>heeft plaatsgevonden</p>
-                    <a class="blauwe-link" href="">BUTTON<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">BUTTON<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
                 <li>
                     <p class="label">UX</p>
                     <h4>Creative Jam Dutch Design Week</h4>
                     <p class="data">01 nov / Eindhoven</p>
                     <p>heeft plaatsgevonden</p>
-                    <a class="blauwe-link" href="">BUTTON<img src="../the-client-website/assets/right-blauw.svg"
-                            alt=""></a>
+                    <a class="blauwe-link" href="">BUTTON<img src="assets/right-blauw.svg" alt=""></a>
                 </li>
             </ul>
         </section>
 
         <!-- laden content -->
-        <section class="laden">
+        <div class="laden">
             <p>meer events aan het laden...</p>
-        </section>
+        </div>
 
         <!-- op de hoogte blijven = aanmelden -->
         <section class="up2date">
             <h3>Blijf op de hoogte van onze events</h3>
-            <a href="">AANMELDEN <img src="../wcag-audit/assets/arrow-right.svg" alt=""></a>
+            <a href="">AANMELDEN <img src="assets/arrow-right.svg" alt=""></a>
         </section>
 
         <!-- bedanken partners = word partner -->
         <section class="thanks">
             <h3>Blijf op de hoogte van onze events</h3>
-            <a href="">WORD PARTNER<img src="../wcag-audit/assets/arrow-right.svg" alt=""></a>
+            <a href="">WORD PARTNER<img src="assets/arrow-right.svg" alt=""></a>
 
             <div class="logos">
-                <img src="../the-client-website/assets/rootnetlogo.png" alt="logo rootnet">
-                <img src="../the-client-website/assets/ictrechtlogo.png" alt="logo ictrecht">
-                <img src="../the-client-website/assets/amaclogo.png" alt="logo Amac">
-                <img src="../the-client-website/assets/rootnetlogo.png" alt="logo rootnet">
-                <img src="../the-client-website/assets/ictrechtlogo.png" alt="logo ictrecht">
-                <img src="../the-client-website/assets/amaclogo.png" alt="logo Amac">
-                <img src="../the-client-website/assets/rootnetlogo.png" alt="logo rootnet">
-                <img src="../the-client-website/assets/ictrechtlogo.png" alt="logo ictrecht">
-                <img src="../the-client-website/assets/amaclogo.png" alt="logo Amac">
-                <img src="../the-client-website/assets/rootnetlogo.png" alt="logo rootnet">
-                <img src="../the-client-website/assets/ictrechtlogo.png" alt="logo ictrecht">
-                <img src="../the-client-website/assets/amaclogo.png" alt="logo Amac">
+                <img src="assets/rootnetlogo.png" alt="logo rootnet">
+                <img src="assets/ictrechtlogo.png" alt="logo ictrecht">
+                <img src="assets/amaclogo.png" alt="logo Amac">
+                <img src="assets/rootnetlogo.png" alt="logo rootnet">
+                <img src="assets/ictrechtlogo.png" alt="logo ictrecht">
+                <img src="assets/amaclogo.png" alt="logo Amac">
+                <img src="assets/rootnetlogo.png" alt="logo rootnet">
+                <img src="assets/ictrechtlogo.png" alt="logo ictrecht">
+                <img src="assets/amaclogo.png" alt="logo Amac">
+                <img src="assets/rootnetlogo.png" alt="logo rootnet">
+                <img src="assets/ictrechtlogo.png" alt="logo ictrecht">
+                <img src="assets/amaclogo.png" alt="logo Amac">
             </div>
         </section>
 
 
         <footer>
             <div class="left">
-                <img id="logo" src="../the-client-website/assets/logo.svg" alt="logo">
+                <img id="logo" src="assets/logo.svg" alt="logo">
                 <a href="">inloggen <img src="assets/arrow-right.svg" alt="pijltje naar rechts"></a>
             </div>
 
