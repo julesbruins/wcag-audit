@@ -25,9 +25,28 @@
     box-sizing: border-box;
 }    
 
+
+/* FONTS STANDAARD */
 p {
     font-family: "archivo";
     font-size: 1em;
+}
+
+p.label {
+    font-weight: light;
+    border: var(--border);
+    padding: 4px;
+    width: fit-content;
+    
+    abbr {
+        text-decoration: none;
+    }
+}
+
+p.data {
+    font-family: "martianmono";
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 a {
@@ -36,15 +55,31 @@ a {
     text-decoration: none;
 }
 
+a.blauwe-link {
+    color: var(--blauw);
+}
+
 h1 {
     font-family: "archivo";
     font-size: 3em;
+    line-height: 3rem;
     text-transform: uppercase;
 }
 
-/* h2 hidden maken (want niet overslaan) */
 h2 {
     display: none;
+}
+
+h3 {
+    font-family: "archivo";
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: "archivo";
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 li {
@@ -54,23 +89,183 @@ li {
 
 
 header {
-
+    img {
+        height: 40px;
+    }
 }
 
 section.home {
+padding: 4rem 1rem 4rem 1rem;
+text-align: center;
+border-top: var(--border);
+
     a {
         color: var(--zwart);
-        
+        line-height: 1rem;
     }
+
+    h1 {
+        padding-top: 1.75rem;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        line-height: 1.75rem;
+    }
+
 }
 
 section.trending {
+    article {
+        padding: 1.5rem;
+        border-top: var(--border);
+    }
+
     img.sizing {
         width: 100%;
+        border: var(--border);
+    }
+
+    .label {
+        margin-top: 1.5rem;
+    }
+    .data {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        margin-bottom: 3.5rem;
+    }
+    a.blauwe-link {
+        margin-bottom: 24px;
+    }
+
+}
+
+section.search {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem 1.5rem;
+    border-top: var(--border);
+}
+
+section.eventlist {
+    ul {
+        padding: 1rem 1.5rem;
+        border-top: var(--border);
+    }
+
+    li {
+        border-top: var(--border);
+        margin-bottom: 2rem;
+    }
+    li:first-child {
+        border-top: none;
+    }
+
+    .label {
+        margin-top: 2rem;
+    }
+    h4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .data {
+        margin-bottom: 1rem;
     }
 }
 
+.laden {
+    padding: 4.875rem 1.5rem;
 
+    text-align: center;
+    border-top: var(--border);
+
+    p {
+        font-family: "martianmono";
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: var(--blauw);
+    }
+}
+
+section.verleden {
+    border-top: var(--border);
+    padding: 4.5rem 1.5rem 1rem;
+
+
+    li {
+        border-top: var(--border);
+        margin-bottom: 2rem;
+    }
+    li:first-child {
+        border-top: none;
+    }
+
+    .label {
+        margin-top: 2rem;
+        color: var(--zwart);
+    }
+    h4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .data {
+        margin-bottom: 1rem;
+        color: var(--zwart);
+    }
+
+    p {
+        text-transform: uppercase;
+        font-family: "martianmono";
+        color: var(--blauw);
+        margin-bottom: 1rem;
+    }
+}
+
+section.up2date {
+    border-top: var(--border);
+    padding: 3rem 1.75rem;
+    h4 {
+        margin-bottom: 2.5rem;
+    }
+}
+
+section.thanks {
+    border-top: var(--border);
+    padding: 3rem 1.75rem;
+    h4 {
+        margin-bottom: 2.5rem;
+    }
+
+}
+.logos {
+    border-top: var(--border);
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    height: 150px;
+    
+    img {
+        border-right: var(--border);
+    }
+
+}
+
+/* FOOTER */
+.first {
+    border-top: var(--border);
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    
+    img#logo {
+        height: 5rem;
+        align-items: start;
+    }
+}
 
 
 
@@ -97,9 +292,8 @@ section.trending {
 
 
 nav {
-    padding: 1rem;
+    padding: .75rem 1rem .75rem 1rem;
     display: flex;
-    background-color: rgb(34, 37, 49);
 }
 
 
@@ -108,12 +302,14 @@ nav {
     width: 40px;
     margin-left: auto;
     position: relative;
+    border: 1px solid;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 .ham-menu span {
-    height: 5px;
-    width: 100%;
-    background-color: #6F86FF;
-    border-radius: 25px;
+    height: 3px;
+    width: 24px;
+    background-color: var(--zwart);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -122,10 +318,10 @@ nav {
 }
 
 .ham-menu span:nth-child(1) {
-    top: 25%;
+    top: 30%;
 }
 .ham-menu span:nth-child(3) {
-    top: 75%;
+    top: 70%;
 }
 
 .ham-menu.active span {
