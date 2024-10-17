@@ -1,14 +1,8 @@
-const openButton = document.querySelector("header > button");
-const deNav = document.querySelector("nav");
-const sluitButton = document.querySelector("nav button");
+const hamMenu = document.querySelector(".ham-menu");
 
-openButton.addEventListener("click", openMenu);
-sluitButton.addEventListener("click", sluitMenu);
+const offScreenMenu = document.querySelector(".off-screen-menu");
 
-function openMenu() { 
-    deNav.classList.add("toonMenu");
-}
-
-function sluitMenu() {
-    deNav.classList.remove("toonMenu"); 
-  }
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
